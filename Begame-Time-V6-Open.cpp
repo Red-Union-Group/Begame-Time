@@ -3,7 +3,7 @@
 #include<conio.h>
 using namespace std;
 
-//¿ÉÒÔÁªÏµÎÒÃÇ»ñÈ¡ÒÔ¼ÓÈëÍÅ¶Ó»ò»ñÈ¡×îÍêÕûµÄÔ´Âë
+//å¯ä»¥è”ç³»æˆ‘ä»¬è·å–ä»¥åŠ å…¥å›¢é˜Ÿæˆ–è·å–æœ€å®Œæ•´çš„æºç 
 //www.Red-Union-Group.com
 //HiJack2025@outlook.com 
 
@@ -98,16 +98,16 @@ int FM_2()
 	system("cls");
 	sc_2();
 	if(BJ_2()==0)return 0;
-	cout<<"Ñº×¢½ğ¶î: "<<chip<<endl<<endl;
-	cout<<"ÕıÔÚÉú³É²»ĞÒÊı...";
+	cout<<"æŠ¼æ³¨é‡‘é¢: "<<chip<<endl<<endl;
+	cout<<"æ­£åœ¨ç”Ÿæˆä¸å¹¸æ•°...";
 	srand(time(NULL));
 	mark2=1+rand()%(9-2+1);
 	Delay(2);
 	system("cls");
 	sc_2();
-	cout<<"Ñº×¢½ğ¶î: "<<chip<<endl;
-	cout<<"²»ĞÒÊı: "<<mark2<<endl;
-	cout<<endl<<"ÕıÔÚÉú³ÉĞÒÔËÊı...";
+	cout<<"æŠ¼æ³¨é‡‘é¢: "<<chip<<endl;
+	cout<<"ä¸å¹¸æ•°: "<<mark2<<endl;
+	cout<<endl<<"æ­£åœ¨ç”Ÿæˆå¹¸è¿æ•°...";
 	mark1=1+rand()%(9-1+1);
 	while(mark2==mark1)
 	mark1=1+rand()%(9-1+1);
@@ -115,26 +115,26 @@ int FM_2()
 	lochip=chip;
 	system("cls");
 	sc_2(); 
-	cout<<"Ñº×¢½ğ¶î: "<<chip<<endl;
-	cout<<"²»ĞÒÊı: "<<mark2<<endl;
-	cout<<"ĞÒÔËÊı: "<<mark1<<endl;
+	cout<<"æŠ¼æ³¨é‡‘é¢: "<<chip<<endl;
+	cout<<"ä¸å¹¸æ•°: "<<mark2<<endl;
+	cout<<"å¹¸è¿æ•°: "<<mark1<<endl;
 	cout<<endl;
-	cout<<"Enter ¼ÌĞø...";
+	cout<<"Enter ç»§ç»­...";
 	gets(str); 
 	system("cls");
 	sc_2();
-	cout<<"Ó®½ğ: "<<chip<<"	°Ü½ğ: "<<lochip<<endl; 
-	cout<<"²»ĞÒÊı: "<<mark2<<"	ĞÒÔËÊı: "<<mark1<<endl;
-	cout<<endl<<"Enter ¼ÌĞø..."; 
+	cout<<"èµ¢é‡‘: "<<chip<<"	è´¥é‡‘: "<<lochip<<endl; 
+	cout<<"ä¸å¹¸æ•°: "<<mark2<<"	å¹¸è¿æ•°: "<<mark1<<endl;
+	cout<<endl<<"Enter ç»§ç»­..."; 
 	gets(str);
 	if(chip==66)gets(str);
 	system("cls");
 	sc_2();
-	cout<<"Ó®½ğ: "<<chip<<"	°Ü½ğ: "<<lochip<<endl; 
-	cout<<"²»ĞÒÊı: "<<mark2<<"	ĞÒÔËÊı: "<<mark1<<endl;
+	cout<<"èµ¢é‡‘: "<<chip<<"	è´¥é‡‘: "<<lochip<<endl; 
+	cout<<"ä¸å¹¸æ•°: "<<mark2<<"	å¹¸è¿æ•°: "<<mark1<<endl;
 
 	cout<<endl;
-	cout<<"ÊÖÅÆ: ";
+	cout<<"æ‰‹ç‰Œ: ";
 	mark3=1+rand()%(10-1+1);
 	mark6=1+rand()%(10-1+1);
 	Card[0][0]=mark3;
@@ -146,16 +146,16 @@ int FM_2()
 	cardcout(Card[0][0]);
 	cout<<"  ";
 	cardcout(Card[0][1]);
-	cout<<endl<<"×Üµã: "<<Morcard[0]<<endl<<endl;
+	cout<<endl<<"æ€»ç‚¹: "<<Morcard[0]<<endl<<endl;
 	mark11=FM_outs_choose();
 	while(mark11==1)
 	{
-		cout<<"ÄãÏ£Íû²¹ÅÆÂğ£¿";
+		cout<<"ä½ å¸Œæœ›è¡¥ç‰Œå—ï¼Ÿ";
 		skill(8);
 		if(waitEnter()!=1){mark11=16;break;}
-		//waitEnterÊÇµÈ´ı»Ø³µº¯Êı£¬ÎªÁËÊµÏÖ¿Õ¸ñ²¹ÅÆ  
-		//·µ»Ø 1 - ¼à²âµ½ÓÃ»§°´ÏÂ¿Õ¸ñ
-		//·µ»Ø 0 - ¼à²âµ½ÓÃ»§°´ÏÂ»Ø³µ 
+		//waitEnteræ˜¯ç­‰å¾…å›è½¦å‡½æ•°ï¼Œä¸ºäº†å®ç°ç©ºæ ¼è¡¥ç‰Œ  
+		//è¿”å› 1 - ç›‘æµ‹åˆ°ç”¨æˆ·æŒ‰ä¸‹ç©ºæ ¼
+		//è¿”å› 0 - ç›‘æµ‹åˆ°ç”¨æˆ·æŒ‰ä¸‹å›è½¦ 
 		mark4++;
 		chip*=10;
 		lochip*=2;
@@ -165,37 +165,37 @@ int FM_2()
 		else Morcard[0]+=mark3;
 		system("cls");
 		sc_2();
-		cout<<"Ó®½ğ: "<<chip<<"	°Ü½ğ: "<<lochip<<endl; 
-		cout<<"²»ĞÒÊı: "<<mark2<<"	ĞÒÔËÊı: "<<mark1<<endl;
+		cout<<"èµ¢é‡‘: "<<chip<<"	è´¥é‡‘: "<<lochip<<endl; 
+		cout<<"ä¸å¹¸æ•°: "<<mark2<<"	å¹¸è¿æ•°: "<<mark1<<endl;
 		cout<<endl;
-		cout<<"ÊÖÅÆ: ";
+		cout<<"æ‰‹ç‰Œ: ";
 		for(int i=0;i<mark4;i++)
 		{cardcout(Card[0][i]);cout<<"  ";}
-		cout<<endl<<"×Üµã: "<<Morcard[0]<<endl<<endl;
+		cout<<endl<<"æ€»ç‚¹: "<<Morcard[0]<<endl<<endl;
 		mark11=FM_outs_choose();
 	}
 	
-	//ÒÔÏÂÎªÌØÊâÇé¿ö 
-	if(mark11==10)cout<<"ÄãÒÑ¾­15ÕÅÅÆÁË£¬Enter ¼ÌĞø...";
-	if(mark11==12)clrcout("ÄãÒÑ¾­²ÈÖĞĞÒÔËÊı£¬Enter ¼ÌĞø...",2);
-	if(mark11==13)clrcout("ÄãÒÑ¾­³¬¹ı100µãÁË£¬Enter ¼ÌĞø...",1);
-	if(mark11==14)clrcout("ÄãÒÑ¾­ Bright-Dot ÁË£¬Enter ¼ÌĞø...",2);
-	if(mark11==15)cout<<"ÄãµÄ×Ê½ğÒÑ¾­²»ÔÙÖ§³Ö£¬Enter ¼ÌĞø...";
+	//ä»¥ä¸‹ä¸ºç‰¹æ®Šæƒ…å†µ 
+	if(mark11==10)cout<<"ä½ å·²ç»15å¼ ç‰Œäº†ï¼ŒEnter ç»§ç»­...";
+	if(mark11==12)clrcout("ä½ å·²ç»è¸©ä¸­å¹¸è¿æ•°ï¼ŒEnter ç»§ç»­...",2);
+	if(mark11==13)clrcout("ä½ å·²ç»è¶…è¿‡100ç‚¹äº†ï¼ŒEnter ç»§ç»­...",1);
+	if(mark11==14)clrcout("ä½ å·²ç» Bright-Dot äº†ï¼ŒEnter ç»§ç»­...",2);
+	if(mark11==15)cout<<"ä½ çš„èµ„é‡‘å·²ç»ä¸å†æ”¯æŒï¼ŒEnter ç»§ç»­...";
 	if(mark11==16)
 	{
 		system("cls");
 		sc_2();
-		cout<<"Ó®½ğ: "<<chip<<"	°Ü½ğ: "<<lochip<<endl; 
-		cout<<"²»ĞÒÊı: "<<mark2<<"	ĞÒÔËÊı: "<<mark1<<endl;
+		cout<<"èµ¢é‡‘: "<<chip<<"	è´¥é‡‘: "<<lochip<<endl; 
+		cout<<"ä¸å¹¸æ•°: "<<mark2<<"	å¹¸è¿æ•°: "<<mark1<<endl;
 
 		cout<<endl;
-		cout<<"ÊÖÅÆ: ";
+		cout<<"æ‰‹ç‰Œ: ";
 		for(int i=0;i<mark4;i++)
 		{cardcout(Card[0][i]);cout<<"  ";}
-		cout<<endl<<"×Üµã: "<<Morcard[0]<<endl<<endl;
-		cout<<"Enter ¼ÌĞø...";
+		cout<<endl<<"æ€»ç‚¹: "<<Morcard[0]<<endl<<endl;
+		cout<<"Enter ç»§ç»­...";
 	}
-	if(mark11==17)clrcout("ÄãÒÑ¾­²ÈÖĞ²»ĞÒ±¶Êı£¬Enter ¼ÌĞø...",1); 
+	if(mark11==17)clrcout("ä½ å·²ç»è¸©ä¸­ä¸å¹¸å€æ•°ï¼ŒEnter ç»§ç»­...",1); 
 	gets(str);
 	return 1;
 }
@@ -203,20 +203,20 @@ void FM_3()
 {
 	system("cls");
 	sc_2();
-	cout<<"Ó®½ğ: "<<chip<<"	°Ü½ğ: "<<lochip<<endl; 
-	cout<<"²»ĞÒÊı: "<<mark2<<"	ĞÒÔËÊı: "<<mark1<<endl<<endl;
-	cout<<"±¾¾Ö×´¿ö: ";
+	cout<<"èµ¢é‡‘: "<<chip<<"	è´¥é‡‘: "<<lochip<<endl; 
+	cout<<"ä¸å¹¸æ•°: "<<mark2<<"	å¹¸è¿æ•°: "<<mark1<<endl<<endl;
+	cout<<"æœ¬å±€çŠ¶å†µ: ";
 	mark12=FM_win_choose();
-	if(mark12==1){clrcout("³É¹¦",2);}
-	if(mark12==0){clrcout("Ê§°Ü",1);}
-	if(mark12==2){clrcout("½±Àø",2);}
+	if(mark12==1){clrcout("æˆåŠŸ",2);}
+	if(mark12==0){clrcout("å¤±è´¥",1);}
+	if(mark12==2){clrcout("å¥–åŠ±",2);}
 	cout<<endl<<"Bemoney:  ";moneycout(1);
 	if(mark12==1){cout<<"+"<<chip<<"=";money+=chip;}
 	if(mark12==0){cout<<"-"<<lochip<<"=";money-=lochip;}
-	if(mark12==2){cout<<"+"<<chip<<"¡Á"<<mark1<<"=";money+=(chip*mark1);}
+	if(mark12==2){cout<<"+"<<chip<<"Ã—"<<mark1<<"=";money+=(chip*mark1);}
 	cinmoney(money);
 	moneycout(1);cout<<endl<<endl;
-	cout<<"Enter ¼ÌĞø...";
+	cout<<"Enter ç»§ç»­...";
 	gets(str);
 }
 int FM_win_choose()
@@ -226,7 +226,7 @@ int FM_win_choose()
 	return 2;
 }
 
-//ÊÇ·ñ¿É²¹ÅÆÅĞ¶Ï  
+//æ˜¯å¦å¯è¡¥ç‰Œåˆ¤æ–­  
 int FM_outs_choose()
 {
 	if(Morcard[0]==mark1*11)return 12;
@@ -249,7 +249,7 @@ int GM_1()
 		system("cls");
 		sc_2();
 		cout<<endl;
-		Wrong("ÒÑ¾­Ã»ÓĞ Bemoney.");
+		Wrong("å·²ç»æ²¡æœ‰ Bemoney.");
 		gets(str);
 		mark10=0;
 		return 0;
@@ -259,15 +259,15 @@ int GM_1()
 		system("cls");
 		sc_2();
 		mark1=0;mark2=0;
-		cout<<endl<<"½øÈë ";
+		cout<<endl<<"è¿›å…¥ ";
 		if(mark10==0)cout<<"Grow Money";
 		else cout<<"Flow Money";
-		cout<<" ĞèÒª´ïµ½ÒÔÏÂÌõ¼ş:"<<endl;
+		cout<<" éœ€è¦è¾¾åˆ°ä»¥ä¸‹æ¡ä»¶:"<<endl;
 		cout<<endl;
 		if(money<12000)mark1=1;
 		if(pt<2)mark2=1;
-		clrcout("¡¤ Bemoney ´ïµ½ 12000.",mark1);cout<<endl;
-		clrcout("¡¤ µÈ¼¶´ïµ½2¼¶¸»ºÀ.",mark2); 
+		clrcout("Â· Bemoney è¾¾åˆ° 12000.",mark1);cout<<endl;
+		clrcout("Â· ç­‰çº§è¾¾åˆ°2çº§å¯Œè±ª.",mark2); 
 		mark10=0;
 		mark1=0;
 		mark2=0;
@@ -288,7 +288,7 @@ int GM_2()
 	system("cls");
 	sc_2();
 	cout<<endl;
-	cout<<"Ä¿Ç°½±³Ø: ";
+	cout<<"ç›®å‰å¥–æ± : ";
 	srand(time(NULL));
 	mark3=1+rand()%(120-10+1);
 	mark4=1+rand()%(120-10+1);
@@ -296,7 +296,7 @@ int GM_2()
 	mark6=1+rand()%(120-10+1);
 	pps=mark3*mark4*mark5*mark6/1000*1000;
 	cout<<pps<<endl;
-	cout<<"Í¶Èë½±³Ø: 5000¡Á";
+	cout<<"æŠ•å…¥å¥–æ± : 5000Ã—";
 	cin>>mark1;
 	mark2=GM_pps_choose(mark1);
 	while(mark2!=1)
@@ -308,41 +308,41 @@ int GM_2()
 		if(mark2==10)mark3=1;
 		if(mark2==11)mark4=1;
 		if(mark2==12)mark5=1;
-		cout<<endl<<"Í¶Èë½±³ØµÄ½ğ±ÒÒª´ïµ½ÒÔÏÂÒªÇó:"<<endl<<endl;
-		clrcout("¡¤ ²»³¬¹ı30¸ö.",mark3);cout<<endl;
-		clrcout("¡¤ ²»ÄÜÎª0.",mark4);cout<<endl;
-		clrcout("¡¤ ²»ÄÜ³¬ÄúµÄ Bemoney.",mark5);cout<<endl;
-		cout<<endl<<"Enter ÖØĞÂÊäÈë...";
+		cout<<endl<<"æŠ•å…¥å¥–æ± çš„é‡‘å¸è¦è¾¾åˆ°ä»¥ä¸‹è¦æ±‚:"<<endl<<endl;
+		clrcout("Â· ä¸è¶…è¿‡30ä¸ª.",mark3);cout<<endl;
+		clrcout("Â· ä¸èƒ½ä¸º0.",mark4);cout<<endl;
+		clrcout("Â· ä¸èƒ½è¶…æ‚¨çš„ Bemoney.",mark5);cout<<endl;
+		cout<<endl<<"Enter é‡æ–°è¾“å…¥...";
 		gets(str);
 		gets(str);
 		system("cls");
 		sc_2();
-		cout<<endl<<"Ä¿Ç°½±³Ø: ";
+		cout<<endl<<"ç›®å‰å¥–æ± : ";
 		cout<<pps<<endl;
-		cout<<"Í¶Èë½±³Ø: 5000¡Á";
+		cout<<"æŠ•å…¥å¥–æ± : 5000Ã—";
 		cin>>mark1;
 		mark2=GM_pps_choose(mark1);
 	}
 	system("cls");
 	sc_2();
-	cout<<endl<<"Ä¿Ç°½±³Ø: "<<pps<<endl;
-	cout<<"Í¶Èë½±³Ø: "<<mark1*5000;
+	cout<<endl<<"ç›®å‰å¥–æ± : "<<pps<<endl;
+	cout<<"æŠ•å…¥å¥–æ± : "<<mark1*5000;
 	money-=(mark1*5000);
 	cinmoney(money);
 	gets(str);
 	gets(str);
 	system("cls");
 	sc_2();
-	cout<<endl<<"Ä¿Ç°½±³Ø: ";
+	cout<<endl<<"ç›®å‰å¥–æ± : ";
 	pps+=(mark1*5000);
 	cout<<pps<<endl;
-	cout<<endl<<endl<<"ÕıÔÚ·ÖÅä°Ù·Ö±È...";
+	cout<<endl<<endl<<"æ­£åœ¨åˆ†é…ç™¾åˆ†æ¯”...";
 	Delay(1);
 	system("cls");
 	sc_2();
-	cout<<endl<<"Ä¿Ç°½±³Ø: ";
+	cout<<endl<<"ç›®å‰å¥–æ± : ";
 	cout<<pps<<endl;
-	cout<<"°Ù·Ö±ÈÖµ: ";
+	cout<<"ç™¾åˆ†æ¯”å€¼: ";
 	srand(time(NULL));
 	mark3=1+rand()%(6-1+1);
 	if(mark3!=6)
@@ -353,35 +353,35 @@ int GM_2()
 	else
 	mark3=mark1*3/2+(100-mark1*3/2)*0.3;
 	cout<<mark3<<"%"<<endl;
-	cout<<endl<<"ÕıÔÚÁ÷ÈëÊĞ³¡...";
+	cout<<endl<<"æ­£åœ¨æµå…¥å¸‚åœº...";
 	Delay(3);
 	system("cls");
 	sc_2();
-	cout<<endl<<"Ä¿Ç°½±³Ø: ";
+	cout<<endl<<"ç›®å‰å¥–æ± : ";
 	cout<<pps<<endl;
-	cout<<"°Ù·Ö±ÈÖµ: "<<mark3<<"%";
-	cout<<endl<<"ÊĞ³¡Çé¿ö: ";
+	cout<<"ç™¾åˆ†æ¯”å€¼: "<<mark3<<"%";
+	cout<<endl<<"å¸‚åœºæƒ…å†µ: ";
 	srand(time(NULL));
 	mark6=1+rand()%(10-1+1);
 	if(mark6==1)mark4=2;
 	else if(mark6<5)mark4=0;
 	else mark4=1;
-	if(mark4==1)clrcout("ÕıÔö³¤",2);
-	if(mark4==2)clrcout("ÁãÔö³¤",3);
-	if(mark4==0)clrcout("¸ºÔö³¤",1);
+	if(mark4==1)clrcout("æ­£å¢é•¿",2);
+	if(mark4==2)clrcout("é›¶å¢é•¿",3);
+	if(mark4==0)clrcout("è´Ÿå¢é•¿",1);
 	cout<<endl;
 	Delay(1);
 	return 1;
 }
 void GM_3()
 {
-	if(mark4==1){cout<<"Ó¯Àû½ğ¶î: ";money=money+(pps*mark3/10000*100);}
-	if(mark4==0){cout<<"¿÷Ëğ½ğ¶î: ";money=money-(pps*mark3/10000*100);}
-	if(mark4!=2)cout<<pps<<"¡Á"<<mark3<<"%="<<pps*mark3/10000*100<<endl;
+	if(mark4==1){cout<<"ç›ˆåˆ©é‡‘é¢: ";money=money+(pps*mark3/10000*100);}
+	if(mark4==0){cout<<"äºæŸé‡‘é¢: ";money=money-(pps*mark3/10000*100);}
+	if(mark4!=2)cout<<pps<<"Ã—"<<mark3<<"%="<<pps*mark3/10000*100<<endl;
 	cinmoney(money);
 	cout<<"Bemoney:  ";
 	if(money>=0)moneycout(1);
-	else {clrcout("×Ê²»µÖÕ®",1);cinmoney(0);money=0;}
+	else {clrcout("èµ„ä¸æŠµå€º",1);cinmoney(0);money=0;}
 	gets(str);
 }
 int GM_pps_choose(int n)
@@ -394,12 +394,12 @@ int GM_pps_choose(int n)
 }
 void Again()
 {
-	cout<<endl<<"ÄãÏ£ÍûÖØĞÂÆô¶¯Âğ(Y/N)£¿";
+	cout<<endl<<"ä½ å¸Œæœ›é‡æ–°å¯åŠ¨å—(Y/N)ï¼Ÿ";
 	gets(str);
 	if(strcmp(str,"y")&&strcmp(str,"Y"))return;
 	system("cls");
 	sc_2();
-	cout<<endl<<"ÕıÔÚÖØÆô..";
+	cout<<endl<<"æ­£åœ¨é‡å¯..";
 	for(int i=0;i<3;i++)
 	{cout<<".";Delay(1);}
 	Delay(1);
@@ -411,18 +411,18 @@ void Again()
 }
 void New_must()
 {
-	return;//ÓÉÓÚ´úÂë¼æÈİÎÊÌâ£¬ÎÒÃÇ²»ÄÜ¹«¿ªÅĞ¶Ï²úÆ·¹ıÆÚµÄ¹«Ê½  
-	midmorcout("ÄãµÄ°æ±¾²»ÔÙÖ§³Ö");
+	return;//ç”±äºä»£ç å…¼å®¹é—®é¢˜ï¼Œæˆ‘ä»¬ä¸èƒ½å…¬å¼€åˆ¤æ–­äº§å“è¿‡æœŸçš„å…¬å¼  
+	midmorcout("ä½ çš„ç‰ˆæœ¬ä¸å†æ”¯æŒ");
 	cout<<endl;
-	midcout("-- ÄãµÄ°æ±¾ÒÑ¹ıÖ§³ÖÊ±¼ä£¬ÏÂÔØ×î°æ±¾»òÖÕ¼«°æÒÔ±£Ö¤²úÆ·°²È«ºÍÌåÑéĞ§¹û --");
+	midcout("-- ä½ çš„ç‰ˆæœ¬å·²è¿‡æ”¯æŒæ—¶é—´ï¼Œä¸‹è½½æœ€ç‰ˆæœ¬æˆ–ç»ˆæç‰ˆä»¥ä¿è¯äº§å“å®‰å…¨å’Œä½“éªŒæ•ˆæœ --");
 	Delay(3);
 	system("start www.red-union-group.com/Begame-Time_1.asp");
 	for(int i=0;i<1;i+=0) 
 	{
 		gets(str);
-		midmorcout("ÄãµÄ°æ±¾²»ÔÙÖ§³Ö");
+		midmorcout("ä½ çš„ç‰ˆæœ¬ä¸å†æ”¯æŒ");
 		cout<<endl;
-		midcout("-- ÄãµÄ°æ±¾ÒÑ¹ıÖ§³ÖÊ±¼ä£¬ÏÂÔØ×îĞÂ°æ±¾»òÖÕ¼«°æÒÔ±£Ö¤²úÆ·°²È«ºÍÌåÑéĞ§¹û --");
+		midcout("-- ä½ çš„ç‰ˆæœ¬å·²è¿‡æ”¯æŒæ—¶é—´ï¼Œä¸‹è½½æœ€æ–°ç‰ˆæœ¬æˆ–ç»ˆæç‰ˆä»¥ä¿è¯äº§å“å®‰å…¨å’Œä½“éªŒæ•ˆæœ --");
 	}
 }
 void New()
@@ -430,43 +430,43 @@ void New()
 	system("cls");
 	sc_1();
 	cout<<endl;
-	cout<<"ÕıÔÚ¼ì²é¸üĞÂ...";
+	cout<<"æ­£åœ¨æ£€æŸ¥æ›´æ–°...";
 	Delay(2);
 	system("cls");
 	sc_1();
 	cout<<endl;
 	if(New_choose()==0) 
-	{clrcout("¿ÉÄÜÒÑÊÇ×îĞÂ°æ±¾£¬Ã»ÓĞ¸üĞÂ¼Æ»®.",2);cout<<endl<<endl<<"µ«ÊÇ½¨ÒéÇ°Íù Begame-Time ¹Ù·½ÍøÕ¾ÒÔÈ·±£»ñµÃ×îĞÂÌåÑé.";}
-	else clrcout("¿ÉÄÜÓĞ¸üĞÂ¼Æ»®£¬ÇëÇ°Íù Begame-Time ¹Ù·½ÍøÕ¾ÒÔÈ·±£»ñÈ¡×îĞÂÌåÑé.",1);
-	cout<<endl<<"Ä¿Ç°°æ±¾: Begame-Time-"<<Vchar<<"-V."<<v;
+	{clrcout("å¯èƒ½å·²æ˜¯æœ€æ–°ç‰ˆæœ¬ï¼Œæ²¡æœ‰æ›´æ–°è®¡åˆ’.",2);cout<<endl<<endl<<"ä½†æ˜¯å»ºè®®å‰å¾€ Begame-Time å®˜æ–¹ç½‘ç«™ä»¥ç¡®ä¿è·å¾—æœ€æ–°ä½“éªŒ.";}
+	else clrcout("å¯èƒ½æœ‰æ›´æ–°è®¡åˆ’ï¼Œè¯·å‰å¾€ Begame-Time å®˜æ–¹ç½‘ç«™ä»¥ç¡®ä¿è·å–æœ€æ–°ä½“éªŒ.",1);
+	cout<<endl<<"ç›®å‰ç‰ˆæœ¬: Begame-Time-"<<Vchar<<"-V."<<v;
 	Delay(1);
 	cout<<endl<<endl<<endl;
-	cout<<"(1)ÍË³ö"<<endl;
-	cout<<"(2)´ò¿ª Begame-Time ¹Ù·½ÍøÕ¾"<<endl<<endl;
-	cout<<"ÊäÈëÖ¸Áî: ";
+	cout<<"(1)é€€å‡º"<<endl;
+	cout<<"(2)æ‰“å¼€ Begame-Time å®˜æ–¹ç½‘ç«™"<<endl<<endl;
+	cout<<"è¾“å…¥æŒ‡ä»¤: ";
 	gets(str);
 	if(strcmp(str,"2")==0)system("start www.red-union-group.com/Begame-Time_1.asp");
 	return;
 }
 int New_choose()
 {
-	return 0;//ÓÉÓÚ´úÂë¼æÈİÎÊÌâ£¬´Ë´¦²¢²»¹«¿ªÕ¹Ê¾ 
+	return 0;//ç”±äºä»£ç å…¼å®¹é—®é¢˜ï¼Œæ­¤å¤„å¹¶ä¸å…¬å¼€å±•ç¤º 
 }
 void Contact()
 {
-	midmorcout("³ÉÎªµÚÒ»ÅúÖ§³ÖÎÒÃÇµÄÓÃ»§");
+	midmorcout("æˆä¸ºç¬¬ä¸€æ‰¹æ”¯æŒæˆ‘ä»¬çš„ç”¨æˆ·");
 	Delay(2);
 	system("cls");
 	sc_1();
 	cout<<endl;
-	cout<<"¹Ù·½ÍøÕ¾: www.Red-Union-Group.com"<<endl;
-	cout<<"ÁªÏµÎÒÃÇ: HiJack2025@outlook.com"<<endl;
+	cout<<"å®˜æ–¹ç½‘ç«™: www.Red-Union-Group.com"<<endl;
+	cout<<"è”ç³»æˆ‘ä»¬: HiJack2025@outlook.com"<<endl;
 	Delay(1);
 	cout<<endl<<endl;
-	cout<<"(1)Ç°Íù Begame-Time ¹Ù·½ÍøÕ¾"<<endl;
-	cout<<"(2)·µ»Ø"<<endl;
+	cout<<"(1)å‰å¾€ Begame-Time å®˜æ–¹ç½‘ç«™"<<endl;
+	cout<<"(2)è¿”å›"<<endl;
 	cout<<endl;
-	cout<<"ÊäÈëÖ¸Áî: ";
+	cout<<"è¾“å…¥æŒ‡ä»¤: ";
 	gets(str);
 	if(strcmp(str,"1")==0)system("start www.Red-Union-Group.com");
 }
@@ -475,14 +475,14 @@ void Skill_does()
 	system("cls");
 	sc_1();
 	cout<<endl;
-	clrcout("³õ´Î½Ì³ÌÔÚµÚ¶ş´Î´ò¿ªÓÎÏ·ºóÄ¬ÈÏ¹Ø±Õ.",2);
+	clrcout("åˆæ¬¡æ•™ç¨‹åœ¨ç¬¬äºŒæ¬¡æ‰“å¼€æ¸¸æˆåé»˜è®¤å…³é—­.",2);
 	cout<<endl<<endl;
-	cout<<"(1)´ò¿ª³õ´Î½Ì³Ì"<<endl;
-	cout<<"(2)¹Ø±Õ³õ´Î½Ì³Ì"<<endl;
-	cout<<"(3)ÁªÏµÎÒÃÇ"<<endl;
-	cout<<"(4)ÍË³ö"<<endl;
+	cout<<"(1)æ‰“å¼€åˆæ¬¡æ•™ç¨‹"<<endl;
+	cout<<"(2)å…³é—­åˆæ¬¡æ•™ç¨‹"<<endl;
+	cout<<"(3)è”ç³»æˆ‘ä»¬"<<endl;
+	cout<<"(4)é€€å‡º"<<endl;
 	cout<<endl;
-	cout<<"Êä³öÖ¸Áî: ";
+	cout<<"è¾“å‡ºæŒ‡ä»¤: ";
 	gets(str);
 	if(strcmp(str,"1")==0)mark13=1;
 	if(strcmp(str,"2")==0)mark13=0;
@@ -491,13 +491,13 @@ void Skill_does()
 void tax_does()
 {
 	now_time();
-	tax_cin();//ÉÏ´Î½ÉË°µÄÈÕÆÚ 
+	tax_cin();//ä¸Šæ¬¡ç¼´ç¨çš„æ—¥æœŸ 
 	int n=(time_year-tax_year_time)*365+(time_month-tax_month_time)*30+(time_day-tax_date_time);
 	int n1=tax_choose_1(money);
 	int n2=tax_choose_2(n1);
-	//n - Î´½ÉË°µÄÌìÊı 
-	//n1- ½ÉË°µÄµÈ¼¶
-	//n2- ½ÉË°µÄÊı¶î 
+	//n - æœªç¼´ç¨çš„å¤©æ•° 
+	//n1- ç¼´ç¨çš„ç­‰çº§
+	//n2- ç¼´ç¨çš„æ•°é¢ 
 	for(int i=0;i<n;i++)
 	money=money-(money*n2/100);
 	cinmoney(money); 
@@ -512,11 +512,11 @@ void tax()
 	cout<<endl;
 	int n1=tax_choose_1(money);
 	int n2=tax_choose_2(n1);
-	cout<<"Ë°ÎñµÈ¼¶: "<<n1<<"¼¶Ë°Îñ"<<endl;
-	cout<<"ËùµÃË°ÂÊ: "<<n2<<".00 %"<<endl;
-	cout<<"½ÉË°Çé¿ö: ÒÑ×Ô¶¯½ÉË°";
+	cout<<"ç¨åŠ¡ç­‰çº§: "<<n1<<"çº§ç¨åŠ¡"<<endl;
+	cout<<"æ‰€å¾—ç¨ç‡: "<<n2<<".00 %"<<endl;
+	cout<<"ç¼´ç¨æƒ…å†µ: å·²è‡ªåŠ¨ç¼´ç¨";
 	cout<<endl<<endl;
-	cout<<"Enter ·µ»Ø...";
+	cout<<"Enter è¿”å›...";
 	gets(str); 
 }
 int tax_choose_1(int n)
@@ -555,35 +555,35 @@ void AAS()
 	cout<<endl;
 	cout<<"Anti-Addiction System (AAS)"<<endl<<endl;
 	
-	cout<<"×´Ì¬: ";
-	if(All_time==1)cout<<"Turn on(¿ªÆô)";
-	if(All_time==0)cout<<"Turn off(¹Ø±Õ)";
+	cout<<"çŠ¶æ€: ";
+	if(All_time==1)cout<<"Turn on(å¼€å¯)";
+	if(All_time==0)cout<<"Turn off(å…³é—­)";
 	
 	cout<<endl;
-	cout<<"ÃÜÂëÉèÖÃ: ";
-	if(hom_time==1)cout<<"Turn on(¿ªÆô)";
-	if(hom_time==0)cout<<"Turn off(¹Ø±Õ)";
+	cout<<"å¯†ç è®¾ç½®: ";
+	if(hom_time==1)cout<<"Turn on(å¼€å¯)";
+	if(hom_time==0)cout<<"Turn off(å…³é—­)";
 	
 	cout<<endl;
-	cout<<"ÏŞÖÆÊ±¶Î: ";
-	if(All_time==0)cout<<"None(Ã»ÓĞ)";
+	cout<<"é™åˆ¶æ—¶æ®µ: ";
+	if(All_time==0)cout<<"None(æ²¡æœ‰)";
 	if(All_time==1)cout<<on_time<<":00 - "<<off_time<<":00";
 	
 	cout<<endl;
-	cout<<"ÏŞÖÆÊ±³¤: ";
-	if(All_time==0)cout<<"None(Ã»ÓĞ)";
+	cout<<"é™åˆ¶æ—¶é•¿: ";
+	if(All_time==0)cout<<"None(æ²¡æœ‰)";
 	if(All_time==1)cout<<long_time<<" Minute";
 	
 	cout<<endl;
-	cout<<"ĞİÏ¢Ê±³¤: ";
-	if(All_time==0)cout<<"None(Ã»ÓĞ)";
+	cout<<"ä¼‘æ¯æ—¶é•¿: ";
+	if(All_time==0)cout<<"None(æ²¡æœ‰)";
 	if(All_time==1)cout<<sleep_time<<" Minute";
 	
 	cout<<endl<<endl<<endl;
 	
-	cout<<"(1)ÍË³ö"<<endl;
-	cout<<"(2)¸ü¸ÄÉèÖÃ"<<endl<<endl;
-	cout<<"ÊäÈëÖ¸Áî: ";
+	cout<<"(1)é€€å‡º"<<endl;
+	cout<<"(2)æ›´æ”¹è®¾ç½®"<<endl<<endl;
+	cout<<"è¾“å…¥æŒ‡ä»¤: ";
 	gets(str);
 	if(strcmp(str,"2"))return;
 	AAS_change();
@@ -594,25 +594,25 @@ void AAS_change()
 	sc_1();
 	cout<<endl;
 	cout<<"Anti-Addiction System (AAS)"<<endl;
-	cout<<"*²¿·ÖÉèÖÃÎŞ·¨¸ü¸Ä£¬ÎÒÃÇ»áÔÚÒÔºóµÄ°æ±¾ÖĞ²»¶Ï¸üĞÂ...";
+	cout<<"*éƒ¨åˆ†è®¾ç½®æ— æ³•æ›´æ”¹ï¼Œæˆ‘ä»¬ä¼šåœ¨ä»¥åçš„ç‰ˆæœ¬ä¸­ä¸æ–­æ›´æ–°...";
 	Delay(1);
 	system("cls");
 	sc_1();
 	cout<<endl;
 	cout<<"Anti-Addiction System (AAS)"<<endl<<endl;
 	
-	cout<<"×´Ì¬(Y/N): ";gets(str);
+	cout<<"çŠ¶æ€(Y/N): ";gets(str);
 	if(strcmp(str,"y")&&strcmp(str,"Y")){All_time=0;time_cout();return;}
 	All_time=1;
 	
-	cout<<"×´Ì¬: Turn on(¿ªÆô)"<<endl;
-	cout<<"ÃÜÂëÉèÖÃ: Turn off(¹Ø±Õ)"<<endl;
-	cout<<"ÏŞÖÆÊ±¶Î: None(Ã»ÓĞ)"<<endl;
+	cout<<"çŠ¶æ€: Turn on(å¼€å¯)"<<endl;
+	cout<<"å¯†ç è®¾ç½®: Turn off(å…³é—­)"<<endl;
+	cout<<"é™åˆ¶æ—¶æ®µ: None(æ²¡æœ‰)"<<endl;
 	
-	cout<<"ÏŞÖÆÊ±³¤: ";cin>>long_time;
-	cout<<"ĞİÏ¢Ê±³¤: ";cin>>sleep_time;
+	cout<<"é™åˆ¶æ—¶é•¿: ";cin>>long_time;
+	cout<<"ä¼‘æ¯æ—¶é•¿: ";cin>>sleep_time;
 	cout<<endl<<endl;
-	cout<<"Enter Íê³É...";
+	cout<<"Enter å®Œæˆ...";
 	gets(str);
 	gets(str);
 	time_cout();
@@ -626,18 +626,18 @@ void About()
 	cout<<"Company:  Red-Union-Group"<<endl;
 	cout<<"Technic:  Ma Kaijie"<<endl;
 	cout<<"CTO:	  Allen"<<endl;
-	cout<<"³ÌĞò:	  Begame-Time-"<<Vchar<<"-V."<<v<<endl;
-	cout<<"ÏµÁĞ:	  Begame-Time-Series"<<endl;
-	cout<<"°æ±¾ºÅ:	  V."<<v<<endl; 
-	cout<<"°æ±¾Âë:	  "<<Vchar<<endl;
-	cout<<"³ö°æÊ±¼ä: "<<Y<<"-"<<M<<endl;
-	cout<<"Ö§³ÖÏµÍ³: Microsoft Windows"<<endl;
-	cout<<"¹Ù·½ÍøÖ·: www.Red-Union-Group.com"<<endl; 
-	cout<<"ÁªÏµÎÒÃÇ: HiJack2025@outlook.com"<<endl; 
+	cout<<"ç¨‹åº:	  Begame-Time-"<<Vchar<<"-V."<<v<<endl;
+	cout<<"ç³»åˆ—:	  Begame-Time-Series"<<endl;
+	cout<<"ç‰ˆæœ¬å·:	  V."<<v<<endl; 
+	cout<<"ç‰ˆæœ¬ç :	  "<<Vchar<<endl;
+	cout<<"å‡ºç‰ˆæ—¶é—´: "<<Y<<"-"<<M<<endl;
+	cout<<"æ”¯æŒç³»ç»Ÿ: Microsoft Windows"<<endl;
+	cout<<"å®˜æ–¹ç½‘å€: www.Red-Union-Group.com"<<endl; 
+	cout<<"è”ç³»æˆ‘ä»¬: HiJack2025@outlook.com"<<endl; 
 	cout<<endl;
 	Delay(1);
-	cout<<"¡¤ ¹ØÓÚ Begame-Time µÄ½âÊÍÈ¨¹é Red-Union-Group ËùÓĞ."<<endl;
-	cout<<endl<<"Enter ·µ»Ø...";
+	cout<<"Â· å…³äº Begame-Time çš„è§£é‡Šæƒå½’ Red-Union-Group æ‰€æœ‰."<<endl;
+	cout<<endl<<"Enter è¿”å›...";
 	gets(str);
 	return;
 }
@@ -647,19 +647,19 @@ void Clock()
 	if(clockget()==1)
 	{
 		cout<<endl;
-		midmorcout("½ñÈÕÒÑ´ò¿¨");
+		midmorcout("ä»Šæ—¥å·²æ‰“å¡");
 		Delay(1);
 		return;
 	}
 	sc_2();
-	cout<<endl<<"Enter ¿ªÊ¼´ò¿¨...";
+	cout<<endl<<"Enter å¼€å§‹æ‰“å¡...";
 	gets(str); 
 	if(strcmp(str,"66")==0)return;
 	Delay(1);
 	system("cls");
 	money+=3000;
 	cinmoney(money);
-	midmorcout("´ò¿¨³É¹¦");
+	midmorcout("æ‰“å¡æˆåŠŸ");
 	clockcin();
 	Delay(1);
 	system("cls");
@@ -667,7 +667,7 @@ void Clock()
 	cout<<endl<<"Bemoney+3000";
 	gets(str);
 	system("cls");
-	midmorcout("½ñÈÕÒÑ´ò¿¨");
+	midmorcout("ä»Šæ—¥å·²æ‰“å¡");
 	Delay(1);
 }
 void BlackJack()
@@ -698,7 +698,7 @@ int BJ_1()
 	if(money==0)
 	{	
 		cout<<endl;
-		Wrong("ÒÑ¾­Ã»ÓĞ Bemoney.");
+		Wrong("å·²ç»æ²¡æœ‰ Bemoney.");
 		gets(str);
 		return 0;
 	}
@@ -706,16 +706,16 @@ int BJ_1()
 }
 int BJ_2()
 {
-	cout<<endl<<"Ñº×¢½ğ¶î: ";
+	cout<<endl<<"æŠ¼æ³¨é‡‘é¢: ";
 	skill(2);
 	gets(str);
 	if(strcmp(str,"A")==0){system("cls");sc_2();chip=money;return 1;}
 	else mark1=BJ_make_num();
-	//ÊäÈë A È«¶Ä£¬Èç¹û²»ÊÇÔò½øĞĞ×Ö·ûÓëÊı×Ö×ª»¯ 
+	//è¾“å…¥ A å…¨èµŒï¼Œå¦‚æœä¸æ˜¯åˆ™è¿›è¡Œå­—ç¬¦ä¸æ•°å­—è½¬åŒ– 
 	
 	if(mark1==66)
 	{
-		cout<<"È·ÈÏÍË³ö: ";
+		cout<<"ç¡®è®¤é€€å‡º: ";
 		cin>>mark2;
 		if(mark1==mark2)return 0;
 	}
@@ -724,28 +724,28 @@ int BJ_2()
 	if(mark9==2){system("cls");sc_2();chip=money;return 1;}
 	while(mark1*100/money>=90)
 	{
-		cout<<endl<<"×¢Òâ: Ñº×¢½ğ¶îÒÑ¾­Õ¼ Bemoney µÄ"<<mark1*100/money<<"%£¬ÎÒÃÇĞèÒªÆô¶¯°²È«È·ÈÏ...";
+		cout<<endl<<"æ³¨æ„: æŠ¼æ³¨é‡‘é¢å·²ç»å  Bemoney çš„"<<mark1*100/money<<"%ï¼Œæˆ‘ä»¬éœ€è¦å¯åŠ¨å®‰å…¨ç¡®è®¤...";
 		gets(str);
 		system("cls");
 		sc_2();
-		cout<<endl<<"Ñº×¢½ğ¶î: "<<mark1<<endl<<"È·ÈÏ½ğ¶î: ";
+		cout<<endl<<"æŠ¼æ³¨é‡‘é¢: "<<mark1<<endl<<"ç¡®è®¤é‡‘é¢: ";
 		cin>>mark3;
 		if(mark1!=mark3)
 		{
 			cout<<endl;
-			Wrong("Á½´ÎÊäÈë²»ÏàÍ¬.");
-			cout<<endl<<"Enter ÖØĞÂÊäÈë...";
+			Wrong("ä¸¤æ¬¡è¾“å…¥ä¸ç›¸åŒ.");
+			cout<<endl<<"Enter é‡æ–°è¾“å…¥...";
 			gets(str);
 			gets(str);
 			system("cls");
 			sc_2();
-			cout<<endl<<"Ñº×¢½ğ¶î: ";
+			cout<<endl<<"æŠ¼æ³¨é‡‘é¢: ";
 			gets(str);
 			if(strcmp(str,"A")==0){system("cls");sc_2();chip=money;return 1;}
 			else mark1=BJ_make_num();
 			if(mark1==66)
 			{
-				cout<<"È·ÈÏÍË³ö: ";
+				cout<<"ç¡®è®¤é€€å‡º: ";
 				cin>>mark2;
 				if(mark1==mark2)return 0;
 			}
@@ -762,11 +762,11 @@ int BJ_2()
 }
 void BJ_3()
 {
-	if(mark8==0)cout<<"Ñº×¢½ğ¶î: "<<chip;
+	if(mark8==0)cout<<"æŠ¼æ³¨é‡‘é¢: "<<chip;
 	if(mark8==1)cout<<"-- Regal Challenge --";
 	cout<<endl<<endl;
 	Delay(1);
-	cout<<"ÊÖÅÆ: ";
+	cout<<"æ‰‹ç‰Œ: ";
 	srand(time(NULL));
 	card1=1+rand()%(15-1+1);
 	card2=1+rand()%(15-1+1);
@@ -781,7 +781,7 @@ void BJ_3()
 	else Morcard[0]+=card2;
 	if(BJ_card_choose(card1,card2)==1)
 	Morcard[0]=21;
-	cout<<endl<<"×Üµã: "<<Morcard[0];
+	cout<<endl<<"æ€»ç‚¹: "<<Morcard[0];
 	cout<<endl<<endl;
 }
 void BJ_4()
@@ -789,7 +789,7 @@ void BJ_4()
 	mark1=BJ_outs_choose();
 	while(mark1==1)
 	{
-		cout<<"ÄãÏ£Íû²¹ÅÆÂğ£¿";
+		cout<<"ä½ å¸Œæœ›è¡¥ç‰Œå—ï¼Ÿ";
 		skill(4);
 		if(waitEnter()!=1)break;
 		mark4++;
@@ -799,13 +799,13 @@ void BJ_4()
 		else Morcard[0]+=card2;
 		system("cls");
 		sc_2();
-		if(mark8==0)cout<<"Ñº×¢½ğ¶î: "<<chip;
+		if(mark8==0)cout<<"æŠ¼æ³¨é‡‘é¢: "<<chip;
 		if(mark8==1)cout<<"-- Regal Challenge --"; 
 		cout<<endl<<endl;
-		cout<<"ÊÖÅÆ: ";
+		cout<<"æ‰‹ç‰Œ: ";
 		for(int i=0;i<mark4;i++)
 		{cardcout(Card[0][i]);cout<<"  ";}
-		cout<<endl<<"×Üµã: "<<Morcard[0];
+		cout<<endl<<"æ€»ç‚¹: "<<Morcard[0];
 		cout<<endl<<endl;
 		mark1=BJ_outs_choose();
 	} 
@@ -813,20 +813,20 @@ void BJ_4()
 	{
 		system("cls");
 		sc_2();
-		if(mark8==0)cout<<"Ñº×¢½ğ¶î: "<<chip;
+		if(mark8==0)cout<<"æŠ¼æ³¨é‡‘é¢: "<<chip;
 		if(mark8==1)cout<<"-- Regal Challenge --";
 		cout<<endl<<endl;
-		cout<<"ÊÖÅÆ: ";
+		cout<<"æ‰‹ç‰Œ: ";
 		for(int i=0;i<mark4;i++)
 		{cardcout(Card[0][i]);cout<<"  ";}
-		cout<<endl<<"×Üµã: "<<Morcard[0];
+		cout<<endl<<"æ€»ç‚¹: "<<Morcard[0];
 		cout<<endl<<endl;
-		cout<<"Enter ¿ªÅÆ...";
+		cout<<"Enter å¼€ç‰Œ...";
 	}
-	if(mark1==10)clrcout("ÄãÒÑ¾­ BlackJack ÁË£¬Enter ¿ªÅÆ...",2);
-	if(mark1==11)cout<<"ÄãÒÑ¾­21µãÁË£¬Enter ¿ªÅÆ...";
-	if(mark1==12)cout<<"ÄãÒÑ¾­³¬¹ı21µãÁË£¬Enter ¿ªÅÆ...";
-	if(mark1==13)clrcout("ÄãÒÑ¾­ Five-Card Charlie ÁË£¬Enter ¿ªÅÆ...",2);
+	if(mark1==10)clrcout("ä½ å·²ç» BlackJack äº†ï¼ŒEnter å¼€ç‰Œ...",2);
+	if(mark1==11)cout<<"ä½ å·²ç»21ç‚¹äº†ï¼ŒEnter å¼€ç‰Œ...";
+	if(mark1==12)cout<<"ä½ å·²ç»è¶…è¿‡21ç‚¹äº†ï¼ŒEnter å¼€ç‰Œ...";
+	if(mark1==13)clrcout("ä½ å·²ç» Five-Card Charlie äº†ï¼ŒEnter å¼€ç‰Œ...",2);
 	gets(str);
 }
 void BJ_5()
@@ -860,21 +860,21 @@ void BJ_5()
 	}
 	system("cls");
 	sc_2();
-	if(mark8==0)cout<<"Ñº×¢½ğ¶î: "<<chip;
+	if(mark8==0)cout<<"æŠ¼æ³¨é‡‘é¢: "<<chip;
 	if(mark8==1)cout<<"-- Regal Challenge --";
 	cout<<endl<<endl;
-	cout<<"ÎÒ·½ÊÖÅÆ: ";
+	cout<<"æˆ‘æ–¹æ‰‹ç‰Œ: ";
 	for(int i=0;i<mark4;i++){cardcout(Card[0][i]);cout<<"  ";}
-	cout<<endl<<"ÎÒ·½×Üµã: "<<Morcard[0];
+	cout<<endl<<"æˆ‘æ–¹æ€»ç‚¹: "<<Morcard[0];
 	cout<<endl<<endl;
-	cout<<"¶Ô·½ÊÖÅÆ: ";
+	cout<<"å¯¹æ–¹æ‰‹ç‰Œ: ";
 	for(int i=0;i<mark5;i++){cardcout(Card[1][i]);cout<<"  ";}
-	cout<<endl<<"¶Ô·½×Üµã: "<<Morcard[1];
-	cout<<endl<<endl<<"±¾¾ÖÇé¿ö: ";
+	cout<<endl<<"å¯¹æ–¹æ€»ç‚¹: "<<Morcard[1];
+	cout<<endl<<endl<<"æœ¬å±€æƒ…å†µ: ";
 	mark1=BJ_win_choose(Morcard[0],Morcard[1]);
-	if(mark1==0)clrcout("Ê§°Ü",1);
-	if(mark1==1)clrcout("Ê¤Àû",2);
-	if(mark1==2)clrcout("Æ½¾Ö",4);
+	if(mark1==0)clrcout("å¤±è´¥",1);
+	if(mark1==1)clrcout("èƒœåˆ©",2);
+	if(mark1==2)clrcout("å¹³å±€",4);
 	if(mark8==0)
 	{	
 		cout<<endl<<"Bemoney:  ";moneycout(1);
@@ -886,8 +886,8 @@ void BJ_5()
 	if(mark8==1)
 	if(mark1==1)
 	{
-		cout<<endl<<"»ñµÃÈÙÓş: ¸»ºÀÖ¤¡¢Bemoney"<<endl;
-		cout<<"Bemoney:  ";moneycout(1);cout<<"+";moneycout(1);cout<<"¡Á";
+		cout<<endl<<"è·å¾—è£èª‰: å¯Œè±ªè¯ã€Bemoney"<<endl;
+		cout<<"Bemoney:  ";moneycout(1);cout<<"+";moneycout(1);cout<<"Ã—";
 		if(money>=5000000){cout<<"70%=";money=money*70/100+money;}
 		else if(money>=100000){cout<<"50%=";money=money*50/100+money;}
 		else {cout<<"30%=";money=money*30/100+money;}
@@ -899,8 +899,8 @@ void BJ_5()
 	if(mark8==1)
 	{
 		system("cls");
-		if(mark1==1)midmorcout("¹§Ï²£¬³É¹¦ÁË");
-		else midmorcout("ºÜÒÅº¶£¬Ã»ÓĞ³É¹¦");
+		if(mark1==1)midmorcout("æ­å–œï¼ŒæˆåŠŸäº†");
+		else midmorcout("å¾ˆé—æ†¾ï¼Œæ²¡æœ‰æˆåŠŸ");
 		Delay(1);
 	}
 }
@@ -920,35 +920,35 @@ void BJ_6()
 void BJ_ptget(int n)
 {
 	cout<<endl;
-	clrcout("ÄãµÄ Bemoney ÒÑ¾­×ãÒÔ²Î¼Ó Regal Challenge ÁË...",2);
+	clrcout("ä½ çš„ Bemoney å·²ç»è¶³ä»¥å‚åŠ  Regal Challenge äº†...",2);
 	skill(5);
 	gets(str);
 	system("cls");
 	midcout("Regal Challenge");
 	cout<<endl<<endl;
-	cout<<"-- ½éÉÜ --"<<endl;
-	cout<<"»¶Ó­À´µ½¸»ºÀÌôÕ½Èü£¬Äã½«´ÓÆ½ÃñÆğ²½£¬Öğ²½»ıÀÛ²Æ¸»ºÍ¾­Ñé£¬Ã¿´ÎÌôÕ½³É¹¦ºó»áµÃµ½ÏàÓ¦µÄ½±Àø£¬²¢ÇÒÀë×îÖÕÄ¿±êÔ½À´Ô½½ü£¬×îÖÕ½úÉıÖÁ10¼¶¸»ºÀ£¬³ÉÎª¾­¼ÃÁìÓòµÄ¶¥¼¶ÈË²Å¡£";
+	cout<<"-- ä»‹ç» --"<<endl;
+	cout<<"æ¬¢è¿æ¥åˆ°å¯Œè±ªæŒ‘æˆ˜èµ›ï¼Œä½ å°†ä»å¹³æ°‘èµ·æ­¥ï¼Œé€æ­¥ç§¯ç´¯è´¢å¯Œå’Œç»éªŒï¼Œæ¯æ¬¡æŒ‘æˆ˜æˆåŠŸåä¼šå¾—åˆ°ç›¸åº”çš„å¥–åŠ±ï¼Œå¹¶ä¸”ç¦»æœ€ç»ˆç›®æ ‡è¶Šæ¥è¶Šè¿‘ï¼Œæœ€ç»ˆæ™‹å‡è‡³10çº§å¯Œè±ªï¼Œæˆä¸ºç»æµé¢†åŸŸçš„é¡¶çº§äººæ‰ã€‚";
 	cout<<endl<<endl;
-	cout<<"-- µÈ¼¶ --"<<endl;
-	cout<<"¡¤1¼¶¸»ºÀ  	ËùĞè Bemoney:7000		»ñµÃÈÙÓş: ¸»ºÀÖ¤¡¢30% Bemoney"<<endl;
-	cout<<"¡¤2¼¶¸»ºÀ  	ËùĞè Bemoney:20000		»ñµÃÈÙÓş: ¸»ºÀÖ¤¡¢30% Bemoney"<<endl;
-	cout<<"¡¤3¼¶¸»ºÀ  	ËùĞè Bemoney:50000		»ñµÃÈÙÓş: ¸»ºÀÖ¤¡¢30% Bemoney"<<endl;
-	cout<<"¡¤4¼¶¸»ºÀ 	ËùĞè Bemoney:100000		»ñµÃÈÙÓş: ¸»ºÀÖ¤¡¢50% Bemoney"<<endl;
-	cout<<"¡¤5¼¶¸»ºÀ  	ËùĞè Bemoney:300000		»ñµÃÈÙÓş: ¸»ºÀÖ¤¡¢50% Bemoney"<<endl;
-	cout<<"¡¤6¼¶¸»ºÀ  	ËùĞè Bemoney:700000		»ñµÃÈÙÓş: ¸»ºÀÖ¤¡¢50% Bemoney"<<endl;
-	cout<<"¡¤7¼¶¸»ºÀ  	ËùĞè Bemoney:1000000		»ñµÃÈÙÓş: ¸»ºÀÖ¤¡¢50% Bemoney"<<endl;
-	cout<<"¡¤8¼¶¸»ºÀ  	ËùĞè Bemoney:5000000		»ñµÃÈÙÓş: ¸»ºÀÖ¤¡¢70% Bemoney"<<endl;
-	cout<<"¡¤9¼¶¸»ºÀ  	ËùĞè Bemoney:10000000		»ñµÃÈÙÓş: ¸»ºÀÖ¤¡¢70% Bemoney"<<endl;
-	cout<<"¡¤10¼¶¸»ºÀ  	ËùĞè Bemoney:1000000000		»ñµÃÈÙÓş: ¸»ºÀÖ¤¡¢70% Bemoney"<<endl;
+	cout<<"-- ç­‰çº§ --"<<endl;
+	cout<<"Â·1çº§å¯Œè±ª  	æ‰€éœ€ Bemoney:7000		è·å¾—è£èª‰: å¯Œè±ªè¯ã€30% Bemoney"<<endl;
+	cout<<"Â·2çº§å¯Œè±ª  	æ‰€éœ€ Bemoney:20000		è·å¾—è£èª‰: å¯Œè±ªè¯ã€30% Bemoney"<<endl;
+	cout<<"Â·3çº§å¯Œè±ª  	æ‰€éœ€ Bemoney:50000		è·å¾—è£èª‰: å¯Œè±ªè¯ã€30% Bemoney"<<endl;
+	cout<<"Â·4çº§å¯Œè±ª 	æ‰€éœ€ Bemoney:100000		è·å¾—è£èª‰: å¯Œè±ªè¯ã€50% Bemoney"<<endl;
+	cout<<"Â·5çº§å¯Œè±ª  	æ‰€éœ€ Bemoney:300000		è·å¾—è£èª‰: å¯Œè±ªè¯ã€50% Bemoney"<<endl;
+	cout<<"Â·6çº§å¯Œè±ª  	æ‰€éœ€ Bemoney:700000		è·å¾—è£èª‰: å¯Œè±ªè¯ã€50% Bemoney"<<endl;
+	cout<<"Â·7çº§å¯Œè±ª  	æ‰€éœ€ Bemoney:1000000		è·å¾—è£èª‰: å¯Œè±ªè¯ã€50% Bemoney"<<endl;
+	cout<<"Â·8çº§å¯Œè±ª  	æ‰€éœ€ Bemoney:5000000		è·å¾—è£èª‰: å¯Œè±ªè¯ã€70% Bemoney"<<endl;
+	cout<<"Â·9çº§å¯Œè±ª  	æ‰€éœ€ Bemoney:10000000		è·å¾—è£èª‰: å¯Œè±ªè¯ã€70% Bemoney"<<endl;
+	cout<<"Â·10çº§å¯Œè±ª  	æ‰€éœ€ Bemoney:1000000000		è·å¾—è£èª‰: å¯Œè±ªè¯ã€70% Bemoney"<<endl;
 	cout<<endl;
-	cout<<"ÄãÒÑ¾­ÓµÓĞ";moneycout(1);cout<<" Bemoney£¬¿ÉÒÔÌôÕ½µ±"<<n<<"¼¶¸»ºÀ¡£"<<endl;
-	cout<<"ÄãÏ£Íû²Î¼ÓÂğ(Y/N/A)£¿";
+	cout<<"ä½ å·²ç»æ‹¥æœ‰";moneycout(1);cout<<" Bemoneyï¼Œå¯ä»¥æŒ‘æˆ˜å½“"<<n<<"çº§å¯Œè±ªã€‚"<<endl;
+	cout<<"ä½ å¸Œæœ›å‚åŠ å—(Y/N/A)ï¼Ÿ";
 	skill(6);
 	gets(str);
 	if(strcmp(str,"a")==0||strcmp(str,"A")==0)return;
 	if(strcmp(str,"Y")&&strcmp(str,"y"))
 	{
-		clrcout("¾Ü¾ø¸»ºÀÌôÕ½Èüºó½«ÓÀ¾Ã½ûÈë£¬ÊÇ·ñ½ÓÊÜ¸»ºÀÌôÕ½ÈüµÄÑûÇë(Y/N/A)£¿",1);
+		clrcout("æ‹’ç»å¯Œè±ªæŒ‘æˆ˜èµ›åå°†æ°¸ä¹…ç¦å…¥ï¼Œæ˜¯å¦æ¥å—å¯Œè±ªæŒ‘æˆ˜èµ›çš„é‚€è¯·(Y/N/A)ï¼Ÿ",1);
 		gets(str);
 		if(strcmp(str,"a")==0||strcmp(str,"A")==0)return;
 		if(strcmp(str,"y")&&strcmp(str,"Y")){mark7=1;return;}
@@ -964,7 +964,7 @@ void BJ_ptget(int n)
 	if(mark1==1){pt=n;ptcin(pt);}
 	mark8=0;
 }
-int BJ_win_choose(int n1,int n2)//ÊäÓ®ÅĞ¶Ï 
+int BJ_win_choose(int n1,int n2)//è¾“èµ¢åˆ¤æ–­ 
 {
 	if(BJ_card_choose(Card[0][0],Card[0][1])==1&&BJ_card_choose(Card[1][0],Card[1][1])==0)
 	return 1;
@@ -1019,19 +1019,19 @@ int BJ_chip_choose_1()
 	while(mark2!=1)
 	{
 		cout<<endl;
-		if(mark2==10)Wrong("Ñº×¢½ğ¶îĞ¡ÓÚµÈÓÚ0.");
-		if(mark2==11)Wrong("Ñº×¢½ğ¶î²»ÄÜ´óÓÚ Bemoney.");
-		cout<<endl<<"Enter ÖØĞÂÊäÈë...";
+		if(mark2==10)Wrong("æŠ¼æ³¨é‡‘é¢å°äºç­‰äº0.");
+		if(mark2==11)Wrong("æŠ¼æ³¨é‡‘é¢ä¸èƒ½å¤§äº Bemoney.");
+		cout<<endl<<"Enter é‡æ–°è¾“å…¥...";
 		gets(str);
 		system("cls");
 		sc_2();
-		cout<<endl<<"Ñº×¢½ğ¶î: ";
+		cout<<endl<<"æŠ¼æ³¨é‡‘é¢: ";
 		gets(str);
 		if(strcmp(str,"A")==0)return 2;
 		else mark1=BJ_make_num();
 		if(mark1==66)
 		{
-			cout<<"È·ÈÏÍË³ö: ";
+			cout<<"ç¡®è®¤é€€å‡º: ";
 			cin>>mark2;
 			if(mark1==mark2)return 0;
 		}
@@ -1050,8 +1050,8 @@ void start_1()
 	sc_1();
 	time_cin();
 	used_time++;
-	if(used_time==1)mark13=1;//³õ´Î½ÌÑ§´ò¿ª 
-	skill(1);//³õ´Î½ÌÑ§ 
+	if(used_time==1)mark13=1;//åˆæ¬¡æ•™å­¦æ‰“å¼€ 
+	skill(1);//åˆæ¬¡æ•™å­¦ 
 	gets(str);
 	system("cls");
 	midmorcout("Begame-Time");
@@ -1068,7 +1068,7 @@ void start_1()
 		gets(str);
 		tax_cout();
 	}
-	New_must();//ÊÇ·ñÒÀÈ»Ö§³Ö²úÆ·µÄÅĞ¶Ï  
+	New_must();//æ˜¯å¦ä¾ç„¶æ”¯æŒäº§å“çš„åˆ¤æ–­  
 	time_cout();
 	money=moneycout(2);
 	ptcout_from();
@@ -1102,30 +1102,30 @@ void start_2()
 int start_3()
 {
 	sc_4();
-	cout<<endl<<"½øÈëÓÎÏ·: ";
+	cout<<endl<<"è¿›å…¥æ¸¸æˆ: ";
 	skill(3);
 	gets(str);
 	if(strcmp(str,"BlackJack")==0||strcmp(str,"1")==0)return 1;
 	if(strcmp(str,"Grow Money")==0||strcmp(str,"2")==0)return 2;
 	if(strcmp(str,"Flow Money")==0||strcmp(str,"3")==0)return 3;
 	if(strcmp(str,"Clock Money")==0||strcmp(str,"4")==0)return 4;
-	if(strcmp(str,"ÖØĞÂÆô¶¯")==0||strcmp(str,"5")==0)return 5;
-	if(strcmp(str,"¼ì²é¸üĞÂ")==0||strcmp(str,"6")==0)return 6;
-	if(strcmp(str,"Ìõ¿îÉùÃ÷")==0||strcmp(str,"7")==0)return 7;
-	if(strcmp(str,"ÁªÏµÎÒÃÇ")==0||strcmp(str,"8")==0)return 8;
-	if(strcmp(str,"ÆÁÄ»ÏŞÖÆ")==0||strcmp(str,"9")==0)return 9;
-	if(strcmp(str,"³õ´Î½Ì³Ì")==0||strcmp(str,"10")==0)return 10;
+	if(strcmp(str,"é‡æ–°å¯åŠ¨")==0||strcmp(str,"5")==0)return 5;
+	if(strcmp(str,"æ£€æŸ¥æ›´æ–°")==0||strcmp(str,"6")==0)return 6;
+	if(strcmp(str,"æ¡æ¬¾å£°æ˜")==0||strcmp(str,"7")==0)return 7;
+	if(strcmp(str,"è”ç³»æˆ‘ä»¬")==0||strcmp(str,"8")==0)return 8;
+	if(strcmp(str,"å±å¹•é™åˆ¶")==0||strcmp(str,"9")==0)return 9;
+	if(strcmp(str,"åˆæ¬¡æ•™ç¨‹")==0||strcmp(str,"10")==0)return 10;
 	
 	if(strcmp(str,"BTTO")==0||strcmp(str,"11")==0)return 11;
-	if(strcmp(str,"¹ØÓÚ")==0||strcmp(str,"12")==0)return 12;
+	if(strcmp(str,"å…³äº")==0||strcmp(str,"12")==0)return 12;
 	while(strcmp(str,"exit")==0||strcmp(str,"0")==0)
 	{
-		cout<<"ÄãÏ£ÍûÍË³öÂğ£¿";
+		cout<<"ä½ å¸Œæœ›é€€å‡ºå—ï¼Ÿ";
 		gets(str);
 		if(strcmp(str,"")==0)
 		{
 			system("cls");
-			midmorcout("ÄãÒÑ¾­ÍË³ö Begame-Time.");
+			midmorcout("ä½ å·²ç»é€€å‡º Begame-Time.");
 			Delay(1);
 			return 0;
 		}
@@ -1143,13 +1143,13 @@ void sc_1()
 void sc_2()
 {
 	cout<<"Begame-Time          -     Red-Union-Group"<<endl;
-	cout<<"Frequency: µÚ"<<used_time<<"»Ø   ";
+	cout<<"Frequency: ç¬¬"<<used_time<<"å›   ";
 	if(used_time<10)cout<<" ";
 	if(used_time<100)cout<<" ";
 	cout<<"-     ";ptcout();cout<<endl;
 	cout<<"Frequency: ";
-	if(fy==0)cout<<"Î´¿ªÊ¼";
-	else     cout<<"µÚ"<<fy<<"´Î ";
+	if(fy==0)cout<<"æœªå¼€å§‹";
+	else     cout<<"ç¬¬"<<fy<<"æ¬¡ ";
 	if(fy<10)cout<<" ";
 	if(fy<100)cout<<" ";
 	cout<<"  -     Bemoney: ";moneycout(1);cout<<"$"<<endl;
@@ -1158,28 +1158,28 @@ void sc_2()
 void sc_3(int n)
 {
 	system("cls");
-	midcout("Ìõ¿îÉùÃ÷");
+	midcout("æ¡æ¬¾å£°æ˜");
 	cout<<endl<<endl;
-	cout<<"Ê×ÏÈ£¬¸ĞĞ»ÄúÊ¹ÓÃ Begame-Time-Open ¡£ÔÚ´Ë£¬ÎÒÃÇ±ØĞëÌØ±ğÉùÃ÷µÄÊÇ£¬ÎÒÃÇµÄ·şÎñ½öÏŞÓéÀÖ¡£ÔÚÊ¹ÓÃÎÒÃÇµÄ·şÎñÖ®Ç°£¬ÇëÏÈÔÄ¶Á¡¢Àí½â²¢Í¬Òâ×ñÊØÎÒÃÇµÄÌõ¿îÉùÃ÷£¬ÒÔ±£Ö¤ÄúµÄĞÄÀí½¡¿µºÍºÏ·¨È¨Òæ²»ÊÜÇÖ·¸¡£"<<endl; 
-	cout<<"Ìõ¿îÈçÏÂ£º";
+	cout<<"é¦–å…ˆï¼Œæ„Ÿè°¢æ‚¨ä½¿ç”¨ Begame-Time-Open ã€‚åœ¨æ­¤ï¼Œæˆ‘ä»¬å¿…é¡»ç‰¹åˆ«å£°æ˜çš„æ˜¯ï¼Œæˆ‘ä»¬çš„æœåŠ¡ä»…é™å¨±ä¹ã€‚åœ¨ä½¿ç”¨æˆ‘ä»¬çš„æœåŠ¡ä¹‹å‰ï¼Œè¯·å…ˆé˜…è¯»ã€ç†è§£å¹¶åŒæ„éµå®ˆæˆ‘ä»¬çš„æ¡æ¬¾å£°æ˜ï¼Œä»¥ä¿è¯æ‚¨çš„å¿ƒç†å¥åº·å’Œåˆæ³•æƒç›Šä¸å—ä¾µçŠ¯ã€‚"<<endl; 
+	cout<<"æ¡æ¬¾å¦‚ä¸‹ï¼š";
 	cout<<endl<<endl;
-	cout<<"-- Õş¸®Ìõ¿î --";
-	cout<<endl<<"¡¤ ¡¶ÖĞ»ªÈËÃñ¹²ºÍ¹úĞÌ·¨¡·µÚ303Ìõ"; 
-	cout<<endl<<"¡¤ ¡¶ÖÎ°²¹ÜÀí´¦·£·¨¡·µÚ70Ìõ";
+	cout<<"-- æ”¿åºœæ¡æ¬¾ --";
+	cout<<endl<<"Â· ã€Šä¸­åäººæ°‘å…±å’Œå›½åˆ‘æ³•ã€‹ç¬¬303æ¡"; 
+	cout<<endl<<"Â· ã€Šæ²»å®‰ç®¡ç†å¤„ç½šæ³•ã€‹ç¬¬70æ¡";
 	cout <<endl<<endl;
-	cout<<"-- Ê¹ÓÃ×¼Ôò --";
-	cout<<endl<<"¡¤ ¸ÃÓÎÏ·Ö»ÏŞÓÚÓÎÏ·ÖĞĞéÄâ»õ±ÒµÄ½»»»£¬²»µÃ½øĞĞÈÎºÎĞÎÊ½µÄÊµ¼Ê»õ±Ò½»Ò×ºÍÎ¥·¨»î¶¯¡£";
-	cout<<endl<<"¡¤ ¸ÃÓÎÏ·Ö»ÒÔÓéÀÖÎªÄ¿µÄ£¬Ã»ÓĞÈÎºÎÓ¯ÀûÄ¿µÄ£¬½öÏŞÓéÀÖ£¬ÎŞÒı²»Á¼¡£";
-	cout<<endl<<"¡¤ ÓÃ»§Ö»ÄÜ½«¸ÃÓÎÏ·ÓÃÓÚºÏ·¨ÓéÀÖ£¬½ûÖ¹ÀûÓÃ¸ÃÓÎÏ·½øĞĞÎ¥·¨»î¶¯¡£" ;
-	cout<<endl<<"¡¤ Öª·¨ÊØ·¨£¬½ûÖ¹¶Ä²©¡£";
-	cout<<endl<<"¡¤ ¸ÃÓÎÏ·½âÊÍÈ¨¹é Red-Union-Group ËùÓĞ¡£";
-	cout<<endl<<"¡¤ ¸Ã¿ªÔ´Âë¹é Red-Union-Group ËùÓĞ¡£";
+	cout<<"-- ä½¿ç”¨å‡†åˆ™ --";
+	cout<<endl<<"Â· è¯¥æ¸¸æˆåªé™äºæ¸¸æˆä¸­è™šæ‹Ÿè´§å¸çš„äº¤æ¢ï¼Œä¸å¾—è¿›è¡Œä»»ä½•å½¢å¼çš„å®é™…è´§å¸äº¤æ˜“å’Œè¿æ³•æ´»åŠ¨ã€‚";
+	cout<<endl<<"Â· è¯¥æ¸¸æˆåªä»¥å¨±ä¹ä¸ºç›®çš„ï¼Œæ²¡æœ‰ä»»ä½•ç›ˆåˆ©ç›®çš„ï¼Œä»…é™å¨±ä¹ï¼Œæ— å¼•ä¸è‰¯ã€‚";
+	cout<<endl<<"Â· ç”¨æˆ·åªèƒ½å°†è¯¥æ¸¸æˆç”¨äºåˆæ³•å¨±ä¹ï¼Œç¦æ­¢åˆ©ç”¨è¯¥æ¸¸æˆè¿›è¡Œè¿æ³•æ´»åŠ¨ã€‚" ;
+	cout<<endl<<"Â· çŸ¥æ³•å®ˆæ³•ï¼Œç¦æ­¢èµŒåšã€‚";
+	cout<<endl<<"Â· è¯¥æ¸¸æˆè§£é‡Šæƒå½’ Red-Union-Group æ‰€æœ‰ã€‚";
+	cout<<endl<<"Â· è¯¥å¼€æºç å½’ Red-Union-Group æ‰€æœ‰ã€‚";
 	cout<<endl<<endl<<endl;
-	if(n==0){clrcout("ÄúÒ»µ©¿ªÊ¼Ê¹ÓÃÁËÎÒÃÇ·şÎñ£¬¼´´ú±íÓÃ»§ÒÑ¾­ÔÄ¶Á¡¢Àí½â£¬²¢Í¬Òâ×ñÊØÎÒÃÇµÄÌõ¿îÉùÃ÷¡£",1);cout<<endl;}
-	if(n==0)clrcout("ÇÒÏÂ´ÎµÇÂ¼»áÄ¬ÈÏÍ¬Òâ¸ÃÌõ¿î¡£",1);
-	if(n==1)clrcout("¸ÃÓÎÏ·ÓÉ Ma Kaijie µ¥ÈËÍê³É£¬Èç¹û¾õµÃ²»´í£¬¿ÉÓÃÁªÏµÎÒÃÇ£¡¸ĞĞ»Ê¹ÓÃ£¡",2);
+	if(n==0){clrcout("æ‚¨ä¸€æ—¦å¼€å§‹ä½¿ç”¨äº†æˆ‘ä»¬æœåŠ¡ï¼Œå³ä»£è¡¨ç”¨æˆ·å·²ç»é˜…è¯»ã€ç†è§£ï¼Œå¹¶åŒæ„éµå®ˆæˆ‘ä»¬çš„æ¡æ¬¾å£°æ˜ã€‚",1);cout<<endl;}
+	if(n==0)clrcout("ä¸”ä¸‹æ¬¡ç™»å½•ä¼šé»˜è®¤åŒæ„è¯¥æ¡æ¬¾ã€‚",1);
+	if(n==1)clrcout("è¯¥æ¸¸æˆç”± Ma Kaijie å•äººå®Œæˆï¼Œå¦‚æœè§‰å¾—ä¸é”™ï¼Œå¯ç”¨è”ç³»æˆ‘ä»¬ï¼æ„Ÿè°¢ä½¿ç”¨ï¼",2);
 	cout<<endl;
-	cout<<endl<<"Enter ¿ªÊ¼...";
+	cout<<endl<<"Enter å¼€å§‹...";
 }
 void sc_4()
 {
@@ -1188,19 +1188,19 @@ void sc_4()
 	cout<<"(2) Grow Money"<<endl;
 	cout<<"(3) Flow Money"<<endl;
 	cout<<"(4) Clock Money"<<endl;
-	cout<<"(5) ÖØĞÂÆô¶¯"<<endl;
-	cout<<"(6) ¼ì²é¸üĞÂ"<<endl;
-	cout<<"(7) Ìõ¿îÉùÃ÷"<<endl;
-	cout<<"(8) ÁªÏµÎÒÃÇ"<<endl;
-	cout<<"(9) ÆÁÄ»ÏŞÖÆ"<<endl;
+	cout<<"(5) é‡æ–°å¯åŠ¨"<<endl;
+	cout<<"(6) æ£€æŸ¥æ›´æ–°"<<endl;
+	cout<<"(7) æ¡æ¬¾å£°æ˜"<<endl;
+	cout<<"(8) è”ç³»æˆ‘ä»¬"<<endl;
+	cout<<"(9) å±å¹•é™åˆ¶"<<endl;
 	cout<<endl;
 	
-	cout<<"(10)³õ´Î½ÌÑ§"<<endl;
+	cout<<"(10)åˆæ¬¡æ•™å­¦"<<endl;
 	cout<<"(11)BTTO"<<endl;
-	cout<<"(12)¹ØÓÚ"<<endl;
-	cout<<"(0) exit(ÍË³ö)"<<endl;
+	cout<<"(12)å…³äº"<<endl;
+	cout<<"(0) exit(é€€å‡º)"<<endl;
 }
-void midmorcout(const string& midoutchar)//ÆÁÄ»ÕıÖĞÊä³ö 
+void midmorcout(const string& midoutchar)//å±å¹•æ­£ä¸­è¾“å‡º 
 {
     system("cls");
     HANDLE hOut=GetStdHandle(STD_OUTPUT_HANDLE);
@@ -1231,7 +1231,7 @@ void midcout(const string& text)
 	cout<<" ";
 	cout<<text;
 }
-void clrcout(const string& text, int clr)//ÑÕÉ«Êä³ö 
+void clrcout(const string& text, int clr)//é¢œè‰²è¾“å‡º 
 {
     #ifdef _WIN32
     HANDLE hConsole=GetStdHandle(STD_OUTPUT_HANDLE);
@@ -1276,7 +1276,7 @@ void clrcout(const string& text, int clr)//ÑÕÉ«Êä³ö
     }
     #endif
 }
-void Delay(int time)//µÈ´ı 
+void Delay(int time)//ç­‰å¾… 
 { 
 	time*=1000;
 	clock_t now=clock(); 
@@ -1294,12 +1294,12 @@ void ptcout()
 	if(pt==8)clrcout("8",2);
 	if(pt==9)clrcout("9",2);
 	if(pt==10)clrcout("10",2);
-	if(pt!=0)clrcout(" ¼¶¸»ºÀ",2);
-	if(pt==0)cout<<"Æ½Ãñ";
+	if(pt!=0)clrcout(" çº§å¯Œè±ª",2);
+	if(pt==0)cout<<"å¹³æ°‘";
 }
 void Wrong(const string& text)
 {
-	clrcout("´íÎó: ",1);
+	clrcout("é”™è¯¯: ",1);
 	clrcout(text,1);
 }
 int BJ_make_num()
@@ -1318,8 +1318,8 @@ void cardcout(int n)
 	else if(n==11)cout<<"J";
 	else if(n==12)cout<<"Q";
 	else if(n==13)cout<<"K";
-	else if(n==14)cout<<"Ğ¡¹í";
-	else if(n==15)cout<<"´óÍõ";
+	else if(n==14)cout<<"å°é¬¼";
+	else if(n==15)cout<<"å¤§ç‹";
 	else cout<<n;
 }
 int waitEnter() 
@@ -1337,7 +1337,7 @@ int waitEnter()
         }
     }
 }
-void now_time()//Ä¿Ç°Ê±¼ä 
+void now_time()//ç›®å‰æ—¶é—´ 
 {
 	time_t now=time(0);
     struct tm *localTime = localtime(&now);
@@ -1348,7 +1348,7 @@ void now_time()//Ä¿Ç°Ê±¼ä
     time_min=localTime->tm_min;  
     time_week=localTime->tm_wday; 
 }
-void time_stop()//AAS½ûÖ¹Ê¹ÓÃÊ±¼ä 
+void time_stop()//AASç¦æ­¢ä½¿ç”¨æ—¶é—´ 
 {
 	now_time();
 	if(time_hour>=on_time&&time_hour<off_time)td_1();
@@ -1361,8 +1361,8 @@ void td_1()
 		system("cls");
 		midmorcout("Anti-Addiction System");
 		cout<<endl;
-		midcout("| Ê±¶ÎÎ´µ½£¬ÏŞÖÆÊ¹ÓÃ |");
-		gets(str);//Ë¢ĞÂ 
+		midcout("| æ—¶æ®µæœªåˆ°ï¼Œé™åˆ¶ä½¿ç”¨ |");
+		gets(str);//åˆ·æ–° 
 		now_time();
 	}
 	system("cls");
@@ -1377,15 +1377,15 @@ void td_2()
 			system("cls");
 			midmorcout("Anti-Addiction System");
 			cout<<endl;
-			midcout("| Ê¹ÓÃ¹ı³¤£¬ÏŞÖÆÊ¹ÓÃ |");
-			gets(str);//Ë¢ĞÂ 
+			midcout("| ä½¿ç”¨è¿‡é•¿ï¼Œé™åˆ¶ä½¿ç”¨ |");
+			gets(str);//åˆ·æ–° 
 			now_time();
 		}
 		system("cls");
 	}
 	marktime(long_time);
 } 
-void marktime(int n)//¼Æ»®ÏÂÒ»´Î±¨Ê± 
+void marktime(int n)//è®¡åˆ’ä¸‹ä¸€æ¬¡æŠ¥æ—¶ 
 {
 	now_time();
 	plntm_min=time_min+n;
@@ -1412,7 +1412,7 @@ void marktime(int n)//¼Æ»®ÏÂÒ»´Î±¨Ê±
 	else if(plntm_day>30){plntm_mon+=1;plntm_day=1;}
 	if(plntm_mon>12){plntm_yer+=1;plntm_mon=1;}
 }
-int time_choose()//Ê±¼äÊÇ·ñÒÑ¾­½áÊø 
+int time_choose()//æ—¶é—´æ˜¯å¦å·²ç»ç»“æŸ 
 {
 	if(time_year<plntm_yer)return 0;
 	if(time_year>plntm_yer)return 1;
@@ -1427,10 +1427,10 @@ int time_choose()//Ê±¼äÊÇ·ñÒÑ¾­½áÊø
 }
 
 
-//ÓÉÓÚÊı¾İ°²È«Ô­Òò£¬Êı¾İ´«Êä¹ı³ÌµÄ´úÂëÎÒÃÇÎŞ·¨¹«¿ª 
-//ÒÔÏÂ´úÂëÓëÎÒÃÇ³ÌĞòÊ¹ÓÃµÄÕæÊµ´úÂë¾ø²»ÏàÍ¬ 
+//ç”±äºæ•°æ®å®‰å…¨åŸå› ï¼Œæ•°æ®ä¼ è¾“è¿‡ç¨‹çš„ä»£ç æˆ‘ä»¬æ— æ³•å…¬å¼€ 
+//ä»¥ä¸‹ä»£ç ä¸æˆ‘ä»¬ç¨‹åºä½¿ç”¨çš„çœŸå®ä»£ç ç»ä¸ç›¸åŒ 
 
-//µ«ÊÇÈç¹ûÁªÏµÎÒÃÇ£¬ÎÒÃÇ¿ÉÒÔÎªÄú¹«¿ª¾ßÌåÄÚÈİ 
+//ä½†æ˜¯å¦‚æœè”ç³»æˆ‘ä»¬ï¼Œæˆ‘ä»¬å¯ä»¥ä¸ºæ‚¨å…¬å¼€å…·ä½“å†…å®¹ 
 int moneycout(int n)
 {
     if(n==2)return money;
@@ -1485,14 +1485,15 @@ void skill(int n)
 {
 	if(mark13!=1||skill_time[n-1]>0)return;
 	if(n==5||n==6)cout<<endl;
-	clrcout("[³õ´Î½ÌÑ§]",2);
-	if(n==1)cout<<"Enter ¿ªÊ¼...";
-	if(n==2)cout<<"(ÊäÈë66ÍË³ö£¬ÊäÈë´óĞ´AÈ«¶Ä)";
-	if(n==3)cout<<"(ÊäÈë±àºÅ£¬ÀıÈçÊäÈë1)";
-	if(n==4)cout<<"°´ÏÂ¿Õ¸ñ²¹ÅÆ£¬»Ø³µ²»²¹ÅÆ.";
-	if(n==5)cout<<"Enter ¼ÌĞø...";
-	if(n==6)cout<<"(Y´ú±í²Î¼Ó£¬N´ú±íÓÀ¾Ã²»²Î¼Ó£¬A´ú±í´Ë´Î²»²Î¼Ó)";
-	if(n==7){cout<<"ÃÅÆ± 5000 Bemoney.";gets(str);}
-	if(n==8)cout<<"°´ÏÂ¿Õ¸ñ²¹ÅÆ£¬»Ø³µ²»²¹ÅÆ.Ã¿´Î²¹ÅÆÓ®½ğ¡Á10£¬°Ü½ğ¡Á2.";
+	clrcout("[åˆæ¬¡æ•™å­¦]",2);
+	if(n==1)cout<<"Enter å¼€å§‹...";
+	if(n==2)cout<<"(è¾“å…¥66é€€å‡ºï¼Œè¾“å…¥å¤§å†™Aå…¨èµŒ)";
+	if(n==3)cout<<"(è¾“å…¥ç¼–å·ï¼Œä¾‹å¦‚è¾“å…¥1)";
+	if(n==4)cout<<"æŒ‰ä¸‹ç©ºæ ¼è¡¥ç‰Œï¼Œå›è½¦ä¸è¡¥ç‰Œ.";
+	if(n==5)cout<<"Enter ç»§ç»­...";
+	if(n==6)cout<<"(Yä»£è¡¨å‚åŠ ï¼ŒNä»£è¡¨æ°¸ä¹…ä¸å‚åŠ ï¼ŒAä»£è¡¨æ­¤æ¬¡ä¸å‚åŠ )";
+	if(n==7){cout<<"é—¨ç¥¨ 5000 Bemoney.";gets(str);}
+	if(n==8)cout<<"æŒ‰ä¸‹ç©ºæ ¼è¡¥ç‰Œï¼Œå›è½¦ä¸è¡¥ç‰Œ.æ¯æ¬¡è¡¥ç‰Œèµ¢é‡‘Ã—10ï¼Œè´¥é‡‘Ã—2.";
 	skill_time[n-1]++;
 }
+
